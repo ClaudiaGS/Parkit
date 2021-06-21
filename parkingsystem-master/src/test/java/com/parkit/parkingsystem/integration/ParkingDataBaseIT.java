@@ -77,4 +77,5 @@ public class ParkingDataBaseIT {
         assertEquals(ticket.getId(),parkingSpotDAO.getNextAvailableSpot(ticket.getParkingSpot().getParkingType()));//check previous parking spot is free
     }
 
+
 }

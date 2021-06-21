@@ -54,7 +54,7 @@
         <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.5</version>
+            <version>0.8.7</version>
             <type>maven-plugin</type>
         </dependency>
         <dependency>
@@ -96,6 +96,12 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.jacoco</groupId>-->
+<!--            <artifactId>jacoco-maven-plugin</artifactId>-->
+<!--            <version>0.8.7</version>-->
+<!--            <type>maven-plugin</type>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -121,38 +127,99 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.jacoco</groupId>-->
+<!--                <artifactId>jacoco-maven-plugin</artifactId>-->
+<!--                <version>0.8.7</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>prepare-agent</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                    <execution>-->
+<!--                        <id>report</id>-->
+<!--                        <phase>test</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>report</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                <version>3.2.0</version>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.5</version>
+                <version>0.8.7</version>
                 <executions>
                     <execution>
+                        <id>prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <destFile>F:/OPENCLASSROOMS/PROJET 4/Parkit/parkingsystem-master/target/jacoco-unit.exec</destFile>
+                        </configuration>
                     </execution>
+
                     <execution>
-                        <id>jacoco-report</id>
-                        <phase>test</phase>
+                        <id>prepare-agent-integration</id>
                         <goals>
+                            <goal>prepare-agent-integration</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>F:/OPENCLASSROOMS/PROJET 4/Parkit/parkingsystem-master/target/jacoco-integration.exec</destFile>
+                            <append>true</append>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>report</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>merge</goal>
                             <goal>report</goal>
                         </goals>
                         <configuration>
-                            <excludes>
-                                <exclude>none</exclude>
-                            </excludes>
-                            <includes>
-                                <include>**/*Test.java</include>
-                                <include>**/*IT.java</include>
-                            </includes>
+                            <!-- merge config -->
+                            <destFile>F:/OPENCLASSROOMS/PROJET 4/Parkit/parkingsystem-master/target/jacoco-united.exec</destFile>
+                            <fileSets>
+                                <fileSet>
+                                    <directory>F:/OPENCLASSROOMS/PROJET 4/Parkit/parkingsystem-master/target</directory>
+                                    <includes>
+                                        <include>jacoco-unit.exec</include>
+                                        <include>jacoco-integration.exec</include>
+                                    </includes>
+                                </fileSet>
+                            </fileSets>
+                            <!-- report config -->
+                            <dataFile>F:/OPENCLASSROOMS/PROJET 4/Parkit/parkingsystem-master/target/jacoco-united.exec</dataFile>
                         </configuration>
                     </execution>
+
                 </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.2.0</version>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+                <executions>
+                    <execution>
+                        <id>integration-tests</id>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                        <!--                        <configuration>-->
+                        <!--                            <argLine>@{failsafeArgLine}</argLine>-->
+                        <!--&lt;!&ndash;                            <skipTests>${skip.integration.tests}</skipTests>&ndash;&gt;-->
+                        <!--                        </configuration>-->
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
