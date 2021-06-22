@@ -11,11 +11,11 @@ import org.apache.logging.log4j.Logger;
 import java.sql.*;
 
 public class TicketDAO {
-
+    
     private static final Logger logger = LogManager.getLogger("TicketDAO");
-
+    
     public DataBaseConfig dataBaseConfig = new DataBaseConfig();
-
+    
     public boolean saveTicket(Ticket ticket) {
         Connection con = null;
         try {
@@ -36,7 +36,7 @@ public class TicketDAO {
             return false;
         }
     }
-
+    
     public Ticket getTicket(String vehicleRegNumber) {
         Connection con = null;
         Ticket ticket = null;
@@ -58,6 +58,7 @@ public class TicketDAO {
             }
             dataBaseConfig.closeResultSet(rs);
             dataBaseConfig.closePreparedStatement(ps);
+            ps.close();
         } catch (Exception ex) {
             logger.error("Error fetching next available slot", ex);
         } finally {
@@ -65,7 +66,7 @@ public class TicketDAO {
             return ticket;
         }
     }
-
+    
     public boolean updateTicket(Ticket ticket) {
         Connection con = null;
         try {
@@ -75,6 +76,7 @@ public class TicketDAO {
             ps.setTimestamp(2, new Timestamp(ticket.getOutTime().getTime()));
             ps.setInt(3, ticket.getId());
             ps.execute();
+            ps.close();
             return true;
         } catch (Exception ex) {
             logger.error("Error saving ticket info", ex);
@@ -83,22 +85,23 @@ public class TicketDAO {
         }
         return false;
     }
-
+    
     public boolean recurringVehicle(String registrationNumber) {
         Connection con = null;
-        boolean result=false;
-
+        boolean result = false;
+        
         try {
             con = dataBaseConfig.getConnection();
             // SQL SELECT query.
             String query = "SELECT COUNT(*) AS NB FROM ticket WHERE VEHICLE_REG_NUMBER=?";
             PreparedStatement st = con.prepareStatement(query);
             // execute the query, and get a java resultset
-            st.setString(1,registrationNumber);
+            st.setString(1, registrationNumber);
             ResultSet rs = st.executeQuery(query);
-            if(rs.next()) {
+            if (rs.next()) {
                 result = rs.getInt("NB") >= 2;
             }
+            st.close();
         } catch (Exception e) {
             System.err.println("Got an exception! ");
             System.err.println(e.getMessage());
@@ -107,6 +110,6 @@ public class TicketDAO {
         }
         return result;
     }
-
-
+    
+    
 }

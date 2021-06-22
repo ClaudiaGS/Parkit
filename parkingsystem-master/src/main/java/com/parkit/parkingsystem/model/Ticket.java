@@ -1,5 +1,7 @@
 package com.parkit.parkingsystem.model;
 
+import com.parkit.parkingsystem.dao.TicketDAO;
+
 import java.util.Date;
 
 public class Ticket {
@@ -10,6 +12,7 @@ public class Ticket {
     private Date inTime;
     private Date outTime;
     private boolean recurringVehicle;
+    TicketDAO ticketDAO=new TicketDAO();
 
     public int getId() {
         return id;
