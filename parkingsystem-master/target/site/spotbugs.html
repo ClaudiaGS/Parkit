@@ -68,7 +68,7 @@
 <th>Missing Classes</th></tr>
 <tr class="b">
 <td>14</td>
-<td>16</td>
+<td>17</td>
 <td>0</td>
 <td>0</td></tr></table></section><section>
 <h2><a name="Files"></a>Files</h2>
@@ -84,7 +84,7 @@
 <td>3</td></tr>
 <tr class="b">
 <td><a href="#com.parkit.parkingsystem.dao.TicketDAO">com.parkit.parkingsystem.dao.TicketDAO</a></td>
-<td>7</td></tr>
+<td>8</td></tr>
 <tr class="a">
 <td><a href="#com.parkit.parkingsystem.model.Ticket">com.parkit.parkingsystem.model.Ticket</a></td>
 <td>4</td></tr>
@@ -129,7 +129,7 @@
 <td>com.parkit.parkingsystem.dao.ParkingSpotDAO.updateParking(ParkingSpot) may fail to clean up java.sql.Statement on checked exception</td>
 <td>EXPERIMENTAL</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE</a></td>
-<td>45</td>
+<td>46</td>
 <td>Medium</td></tr></table></section><a name="com.parkit.parkingsystem.dao.TicketDAO"></a><section>
 <h3><a name="com.parkit.parkingsystem.dao.TicketDAO"></a>com.parkit.parkingsystem.dao.TicketDAO</h3>
 <table border="0" class="bodyTable">
@@ -143,71 +143,77 @@
 <td>Dead store to $L5 in com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DLS_DEAD_LOCAL_STORE">DLS_DEAD_LOCAL_STORE</a></td>
-<td>32</td>
+<td>29</td>
 <td>Medium</td></tr>
 <tr class="a">
+<td>com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket) may fail to clean up java.sql.Statement</td>
+<td>EXPERIMENTAL</td>
+<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION">OBL_UNSATISFIED_OBLIGATION</a></td>
+<td>23</td>
+<td>Medium</td></tr>
+<tr class="b">
 <td>com.parkit.parkingsystem.dao.TicketDAO.getTicket(String) may fail to clean up java.sql.ResultSet on checked exception</td>
 <td>EXPERIMENTAL</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE</a></td>
-<td>50</td>
+<td>45</td>
 <td>Medium</td></tr>
-<tr class="b">
+<tr class="a">
 <td>com.parkit.parkingsystem.dao.TicketDAO.getTicket(String) may fail to clean up java.sql.Statement on checked exception</td>
 <td>EXPERIMENTAL</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE</a></td>
-<td>47</td>
+<td>43</td>
 <td>Medium</td></tr>
-<tr class="a">
+<tr class="b">
 <td>com.parkit.parkingsystem.dao.TicketDAO.recurringVehicle(String) may fail to clean up java.sql.ResultSet on checked exception</td>
 <td>EXPERIMENTAL</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE</a></td>
-<td>103</td>
+<td>95</td>
 <td>Medium</td></tr>
-<tr class="b">
+<tr class="a">
 <td>com.parkit.parkingsystem.dao.TicketDAO.recurringVehicle(String) may fail to clean up java.sql.Statement on checked exception</td>
 <td>EXPERIMENTAL</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE</a></td>
-<td>100</td>
-<td>Medium</td></tr>
-<tr class="a">
-<td>com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket) may fail to clean up java.sql.Statement on checked exception</td>
-<td>EXPERIMENTAL</td>
-<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE</a></td>
-<td>23</td>
+<td>93</td>
 <td>Medium</td></tr>
 <tr class="b">
 <td>com.parkit.parkingsystem.dao.TicketDAO.updateTicket(Ticket) may fail to clean up java.sql.Statement on checked exception</td>
 <td>EXPERIMENTAL</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE</a></td>
-<td>76</td>
+<td>71</td>
+<td>Medium</td></tr>
+<tr class="a">
+<td>com.parkit.parkingsystem.dao.TicketDAO.saveTicket(Ticket) may fail to close PreparedStatement</td>
+<td>BAD_PRACTICE</td>
+<td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#ODR_OPEN_DATABASE_RESOURCE">ODR_OPEN_DATABASE_RESOURCE</a></td>
+<td>23</td>
 <td>Medium</td></tr></table></section><a name="com.parkit.parkingsystem.model.Ticket"></a><section>
 <h3><a name="com.parkit.parkingsystem.model.Ticket"></a>com.parkit.parkingsystem.model.Ticket</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>com.parkit.parkingsystem.model.Ticket.getInTime() may expose internal representation by returning Ticket.inTime</td>
 <td>MALICIOUS_CODE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#EI_EXPOSE_REP">EI_EXPOSE_REP</a></td>
 <td>47</td>
 <td>Medium</td></tr>
-<tr class="a">
+<tr class="b">
 <td>com.parkit.parkingsystem.model.Ticket.getOutTime() may expose internal representation by returning Ticket.outTime</td>
 <td>MALICIOUS_CODE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#EI_EXPOSE_REP">EI_EXPOSE_REP</a></td>
 <td>55</td>
 <td>Medium</td></tr>
-<tr class="b">
+<tr class="a">
 <td>com.parkit.parkingsystem.model.Ticket.setInTime(Date) may expose internal representation by storing an externally mutable object into Ticket.inTime</td>
 <td>MALICIOUS_CODE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#EI_EXPOSE_REP2">EI_EXPOSE_REP2</a></td>
 <td>51</td>
 <td>Medium</td></tr>
-<tr class="a">
+<tr class="b">
 <td>com.parkit.parkingsystem.model.Ticket.setOutTime(Date) may expose internal representation by storing an externally mutable object into Ticket.outTime</td>
 <td>MALICIOUS_CODE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#EI_EXPOSE_REP2">EI_EXPOSE_REP2</a></td>
@@ -215,13 +221,13 @@
 <td>Medium</td></tr></table></section><a name="com.parkit.parkingsystem.util.InputReaderUtil"></a><section>
 <h3><a name="com.parkit.parkingsystem.util.InputReaderUtil"></a>com.parkit.parkingsystem.util.InputReaderUtil</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>Found reliance on default encoding in com.parkit.parkingsystem.util.InputReaderUtil.&lt;static initializer for InputReaderUtil&gt;(): new java.util.Scanner(InputStream)</td>
 <td>I18N</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DM_DEFAULT_ENCODING">DM_DEFAULT_ENCODING</a></td>

@@ -21,8 +21,6 @@ public class TicketDAO {
         try {
             con = dataBaseConfig.getConnection();
             PreparedStatement ps = con.prepareStatement(DBConstants.SAVE_TICKET);
-            //ID, PARKING_NUMBER, VEHICLE_REG_NUMBER, PRICE, IN_TIME, OUT_TIME)
-            //ps.setInt(1,ticket.getId());
             ps.setInt(1, ticket.getParkingSpot().getId());
             ps.setString(2, ticket.getVehicleRegNumber());
             ps.setDouble(3, ticket.getPrice());
@@ -43,7 +41,6 @@ public class TicketDAO {
         try {
             con = dataBaseConfig.getConnection();
             PreparedStatement ps = con.prepareStatement(DBConstants.GET_TICKET);
-            //ID, PARKING_NUMBER, VEHICLE_REG_NUMBER, PRICE, IN_TIME, OUT_TIME)
             ps.setString(1, vehicleRegNumber);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -92,16 +89,14 @@ public class TicketDAO {
         
         try {
             con = dataBaseConfig.getConnection();
-            // SQL SELECT query.
             String query = "SELECT COUNT(*) AS NB FROM ticket WHERE VEHICLE_REG_NUMBER=?";
-            PreparedStatement st = con.prepareStatement(query);
-            // execute the query, and get a java resultset
-            st.setString(1, registrationNumber);
-            ResultSet rs = st.executeQuery(query);
+            PreparedStatement ps = con.prepareStatement(query);
+            ps.setString(1, registrationNumber);
+            ResultSet rs = ps.executeQuery(query);
             if (rs.next()) {
                 result = rs.getInt("NB") >= 2;
             }
-            st.close();
+            ps.close();
         } catch (Exception e) {
             System.err.println("Got an exception! ");
             System.err.println(e.getMessage());
