@@ -10,6 +10,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.sql.*;
 
+/**
+ * Connects to the database to operate ticket information
+ */
 public class TicketDAO {
     
     private static final Logger logger = LogManager.getLogger("TicketDAO");
@@ -83,6 +86,12 @@ public class TicketDAO {
         return false;
     }
     
+    /**
+     * Checks if vehicle is or not at its first visit to the parking area
+     *
+     * @param registrationNumber
+     * @return boolean false if new vehicle and true if recurring vehicle
+     */
     public boolean recurringVehicle(String registrationNumber) {
         Connection con = null;
         boolean result = false;

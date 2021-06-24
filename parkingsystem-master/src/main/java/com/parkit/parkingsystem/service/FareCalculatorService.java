@@ -4,13 +4,13 @@ import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.model.Ticket;
 
 /**
- * A calculator that deals the fare calculation for the present ticket
+ * Defines the calculator that returns the fare a vehicle needs to pay
  */
 public class FareCalculatorService {
     /**
-     * The method calculates the fare for the given ticket
+     * The method calculates the fare for the given ticket and associates it to the ticket
      *
-     * @param ticket stores the entry data for a vehicle
+     * @param ticket stores the parking information for a vehicle
      */
     public void calculateFare(Ticket ticket) {
         
@@ -20,7 +20,8 @@ public class FareCalculatorService {
         
         double inHour = ticket.getInTime().getTime();
         double outHour = ticket.getOutTime().getTime();
-        double duration = (outHour - inHour) / 1000 / 60;
+        double duration = ((outHour - inHour) / 1000 / 60);
+  
         if (duration <= 30) {
             ticket.setPrice(0);
         } else {

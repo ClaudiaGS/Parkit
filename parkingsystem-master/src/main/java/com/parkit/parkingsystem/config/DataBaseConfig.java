@@ -5,6 +5,10 @@ import org.apache.logging.log4j.Logger;
 
 import java.sql.*;
 
+/**
+ * Connection to the database
+ */
+
 public class DataBaseConfig {
     
     private static final Logger logger = LogManager.getLogger("DataBaseConfig");

@@ -2,32 +2,35 @@
 
 import com.parkit.parkingsystem.constants.ParkingType;
 
+/**
+ * Defines a parking spot
+ */
 public class ParkingSpot {
     private int number;
     private ParkingType parkingType;
     private boolean isAvailable;
-
-<span class="fc" id="L10">    public ParkingSpot(int number, ParkingType parkingType, boolean isAvailable) {</span>
-<span class="fc" id="L11">        this.number = number;</span>
-<span class="fc" id="L12">        this.parkingType = parkingType;</span>
-<span class="fc" id="L13">        this.isAvailable = isAvailable;</span>
-<span class="fc" id="L14">    }</span>
-
+    
+<span class="fc" id="L13">    public ParkingSpot(int number, ParkingType parkingType, boolean isAvailable) {</span>
+<span class="fc" id="L14">        this.number = number;</span>
+<span class="fc" id="L15">        this.parkingType = parkingType;</span>
+<span class="fc" id="L16">        this.isAvailable = isAvailable;</span>
+<span class="fc" id="L17">    }</span>
+    
     public int getId() {
-<span class="fc" id="L17">        return number;</span>
+<span class="fc" id="L20">        return number;</span>
     }
-
+    
     public ParkingType getParkingType() {
-<span class="fc" id="L21">        return parkingType;</span>
+<span class="fc" id="L24">        return parkingType;</span>
     }
-
+    
     public boolean isAvailable() {
-<span class="fc" id="L25">        return isAvailable;</span>
+<span class="fc" id="L28">        return isAvailable;</span>
     }
-
+    
     public void setAvailable(boolean available) {
-<span class="fc" id="L29">        isAvailable = available;</span>
-<span class="fc" id="L30">    }</span>
+<span class="fc" id="L32">        isAvailable = available;</span>
+<span class="fc" id="L33">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

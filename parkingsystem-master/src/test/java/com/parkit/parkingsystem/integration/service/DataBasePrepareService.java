@@ -4,6 +4,9 @@ import com.parkit.parkingsystem.integration.config.DataBaseTestConfig;
 
 import java.sql.Connection;
 
+/**
+ * Connection to database to clear entries
+ */
 public class DataBasePrepareService {
 
     DataBaseTestConfig dataBaseTestConfig = new DataBaseTestConfig();
