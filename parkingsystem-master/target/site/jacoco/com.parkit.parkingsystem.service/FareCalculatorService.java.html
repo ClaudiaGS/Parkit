@@ -38,7 +38,7 @@ import com.parkit.parkingsystem.model.Ticket;
 <span class="nc" id="L38">                    throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
             }
             
-<span class="fc bfc" id="L41" title="All 2 branches covered.">            if (ticket.getRecurringVehicle() == true) {</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">            if (ticket.getRecurringVehicle()) {</span>
 <span class="fc" id="L42">                ticket.setPrice(ticket.getPrice() * 0.95);</span>
             }
         }

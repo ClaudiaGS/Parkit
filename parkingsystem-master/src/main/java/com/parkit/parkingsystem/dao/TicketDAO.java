@@ -98,10 +98,9 @@ public class TicketDAO {
         
         try {
             con = dataBaseConfig.getConnection();
-            String query = "SELECT COUNT(*) AS NB FROM ticket WHERE VEHICLE_REG_NUMBER=?";
-            PreparedStatement ps = con.prepareStatement(query);
+            PreparedStatement ps = con.prepareStatement(DBConstants.COUNT_RECURRING);
             ps.setString(1, registrationNumber);
-            ResultSet rs = ps.executeQuery(query);
+            ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 result = rs.getInt("NB") >= 2;
             }

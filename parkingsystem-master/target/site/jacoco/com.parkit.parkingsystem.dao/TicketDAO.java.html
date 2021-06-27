@@ -98,21 +98,20 @@ import java.sql.*;
         
         try {
 <span class="fc" id="L100">            con = dataBaseConfig.getConnection();</span>
-<span class="fc" id="L101">            String query = &quot;SELECT COUNT(*) AS NB FROM ticket WHERE VEHICLE_REG_NUMBER=?&quot;;</span>
-<span class="fc" id="L102">            PreparedStatement ps = con.prepareStatement(query);</span>
-<span class="fc" id="L103">            ps.setString(1, registrationNumber);</span>
-<span class="nc" id="L104">            ResultSet rs = ps.executeQuery(query);</span>
-<span class="nc bnc" id="L105" title="All 2 branches missed.">            if (rs.next()) {</span>
-<span class="nc bnc" id="L106" title="All 2 branches missed.">                result = rs.getInt(&quot;NB&quot;) &gt;= 2;</span>
+<span class="fc" id="L101">            PreparedStatement ps = con.prepareStatement(DBConstants.COUNT_RECURRING);</span>
+<span class="fc" id="L102">            ps.setString(1, registrationNumber);</span>
+<span class="fc" id="L103">            ResultSet rs = ps.executeQuery();</span>
+<span class="pc bpc" id="L104" title="1 of 2 branches missed.">            if (rs.next()) {</span>
+<span class="pc bpc" id="L105" title="1 of 2 branches missed.">                result = rs.getInt(&quot;NB&quot;) &gt;= 2;</span>
             }
-<span class="nc" id="L108">            ps.close();</span>
-<span class="fc" id="L109">        } catch (Exception e) {</span>
-<span class="fc" id="L110">            System.err.println(&quot;Got an exception! &quot;);</span>
-<span class="fc" id="L111">            System.err.println(e.getMessage());</span>
+<span class="fc" id="L107">            ps.close();</span>
+<span class="nc" id="L108">        } catch (Exception e) {</span>
+<span class="nc" id="L109">            System.err.println(&quot;Got an exception! &quot;);</span>
+<span class="nc" id="L110">            System.err.println(e.getMessage());</span>
         } finally {
-<span class="fc" id="L113">            dataBaseConfig.closeConnection(con);</span>
+<span class="fc" id="L112">            dataBaseConfig.closeConnection(con);</span>
         }
-<span class="fc" id="L115">        return result;</span>
+<span class="fc" id="L114">        return result;</span>
     }
     
     
