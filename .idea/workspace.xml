@@ -5,7 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="769d508d-4c03-441d-ba58-ab65bba7a7ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/service/FareCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/service/FareCalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/constants/DBConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/constants/DBConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/dao/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/dao/TicketDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/service/ParkingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/src/main/java/com/parkit/parkingsystem/service/ParkingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/checkstyle-cachefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/checkstyle-checker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/checkstyle-checker.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/checkstyle-result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/checkstyle-result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/classes/com/parkit/parkingsystem/constants/DBConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/classes/com/parkit/parkingsystem/constants/DBConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/classes/com/parkit/parkingsystem/dao/TicketDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/classes/com/parkit/parkingsystem/dao/TicketDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/classes/com/parkit/parkingsystem/service/ParkingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/classes/com/parkit/parkingsystem/service/ParkingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/failsafe-reports/TEST-com.parkit.parkingsystem.integration.ParkingDataBaseIT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/failsafe-reports/TEST-com.parkit.parkingsystem.integration.ParkingDataBaseIT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/failsafe-reports/com.parkit.parkingsystem.integration.ParkingDataBaseIT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/failsafe-reports/com.parkit.parkingsystem.integration.ParkingDataBaseIT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/failsafe-reports/failsafe-summary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/jacoco-integration.exec" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/jacoco-integration.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/jacoco-unit.exec" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/jacoco-unit.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/jacoco-united.exec" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/jacoco-united.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/parking-system-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/parking-system-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/checkstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/checkstyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/checkstyle.rss" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/checkstyle.rss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/dependencies.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/dependencies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/dependency-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/dependency-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/failsafe-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/failsafe-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.config/DataBaseConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.config/DataBaseConfig.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.constants/DBConstants.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.constants/DBConstants.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.constants/Fare.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.constants/Fare.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.constants/ParkingType.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.constants/ParkingType.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/ParkingSpotDAO.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/ParkingSpotDAO.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/TicketDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/TicketDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/TicketDAO.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/TicketDAO.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.dao/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.model/ParkingSpot.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.model/ParkingSpot.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.model/Ticket.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.model/Ticket.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/FareCalculatorService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/FareCalculatorService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/InteractiveShell.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/InteractiveShell.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.service/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.util/InputReaderUtil.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem.util/InputReaderUtil.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem/App.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/com.parkit.parkingsystem/App.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/report.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-resources/sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/plugin-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/plugin-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/plugins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/project-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/project-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/project-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/project-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/spotbugs.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/spotbugs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/site/surefire-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/site/surefire-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/spotbugsXml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/spotbugsXml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/TEST-com.parkit.parkingsystem.FareCalculatorServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/TEST-com.parkit.parkingsystem.FareCalculatorServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/TEST-com.parkit.parkingsystem.ParkingServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/TEST-com.parkit.parkingsystem.ParkingServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/com.parkit.parkingsystem.FareCalculatorServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/com.parkit.parkingsystem.FareCalculatorServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/com.parkit.parkingsystem.ParkingServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parkingsystem-master/target/surefire-reports/com.parkit.parkingsystem.ParkingServiceTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +97,7 @@
     <property name="project.structure.side.proportion" value="0.2802607" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="JUnit.com.parkit.parkingsystem in parking-system">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.App" />
       <module name="parking-system" />
@@ -137,10 +200,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.com.parkit.parkingsystem in parking-system" />
         <item itemvalue="JUnit.ParkingDataBaseIT" />
         <item itemvalue="JUnit.FareCalculatorServiceTest" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
