@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+        <Class name="com.parkit.parkingsystem.config.DataBaseConfig"/>
+    </Match>
+    <Match>
+        <Class name="com.parkit.parkingsystem.dao.ParkingSpotDAO"/>
+
+    </Match>
+    <Match>
+        <Class name="com.parkit.parkingsystem.dao.TicketDAO"/>
+
+    </Match>
+    <Match>
+        <Class name="com.parkit.parkingsystem.model.Ticket"/>
+
+    </Match>
+    <Match>
+        <Class name="com.parkit.parkingsystem.util.InputReaderUtil"/>
+    </Match>
+</FindBugsFilter>
