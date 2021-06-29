@@ -1,4 +1,0 @@
-# Created at 2021-06-28T19:41:39.087
-Boot Manifest-JAR contains absolute paths in classpath 'F:\OPENCLASSROOMS\PROJET 4\Parkit\parkingsystem-master\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
